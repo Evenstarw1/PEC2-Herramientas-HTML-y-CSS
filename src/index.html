@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PEC1 - Laura Corral López</title>
+  <link rel="icon" href="images/new_logo.svg" sizes="any">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
   <header>
     <div class="nav-bar">
         <a class="logo" href="#">
-            <img src="./images/escudo.jpeg" alt="logo escudo">
+            <img src="./images/new_logo.svg" alt="logo escudo">
             <p>Nigüelas</p>
         </a>
         <nav>
@@ -46,6 +47,17 @@
               En esta página ofrecemos información para todas aquellas personas interesadas en disfrutar de un día de turismo.
             </p>
         </div>
+
+        <div class="principal-img">
+          <img srcset="images/imagen-pueblo-480.webp 480w,
+                      images/imagen-pueblo-800.webp 800w,
+                      images/imagen-pueblo-1200.webp 1200w"
+               sizes="(max-width: 576px) 480px,
+                      (max-width: 768px) 800px,
+                      1200px"
+               src="images/imagen-pueblo-1200.webp" alt="Imagen de Nigüelas">
+        </div>
+
         <div class="white-container">
           <h2>Enlaces</h2>
           <div>
@@ -77,10 +89,13 @@
     
   
   <footer>
+    <img src="./images/new_logo.svg" alt="logo escudo">
     <ul>
       <li>Made with <span class="footer-heart">&#9829;</span> by Laura Corral López</li>
       <li>2023</li>
-      <li><a class="" href="https://github.com/" aria-label="Ir a Github">Github</a></li>
+      <li><a href="./categories.html">Categorías</a></li>
+      <li><a href="./presentation.html">Presentación</a></li>
+      <li><a href="./links.html">Enlaces</a></li>
     </ul>
   </footer>
 
