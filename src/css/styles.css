@@ -26,6 +26,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 9999;
+  background-color: #d8e1da;
 }
 
 .nav-bar {
@@ -360,6 +361,12 @@ article {
   border-radius: 30px;
 }
 
+.detail-principal-image {
+  height: 80%;
+  display: block;
+  margin: auto;
+}
+
 .detail-description h2 {
   margin-left: 40px;
 }
@@ -546,6 +553,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
   box-shadow: 0px -5px 5px -2px rgb(95, 99, 101);
+  background-color: #d8e1da;
 }
 
 .footer-heart {

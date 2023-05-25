@@ -29,6 +29,7 @@
     "rimraf": "^5.0.0"
   },
   "dependencies": {
+    "responsive-images-resizer": "^1.1.9",
     "sharp": "^0.32.1"
   }
 }
