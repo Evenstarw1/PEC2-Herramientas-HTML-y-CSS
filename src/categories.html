@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PEC1 - Laura Corral López</title>
-    <link rel="icon" href="images/new_logo.svg" sizes="any">
+    <link rel="icon" href="images/new_logo.ico" sizes="any">
+    <link rel="icon" href="images/new_logo.svg" type="image/svg+xml"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -46,10 +47,11 @@
               >
             </dt>
             <dd class="categories-img">
-              <img
-                src="images/la-pavilla-1.jpg"
-                loading="lazy"
-                alt="Sendero de la pavilla">
+              <picture>
+                <source srcset="images/la-pavilla-1.webp" type="image/webp">
+                <source srcset="images/la-pavilla-1.jpg" type="image/jpeg"> 
+                <img src="images/la-pavilla-1.jpg" alt="Sendero de la pavilla">
+              </picture>
             </dd>
             <dd class="categories-description">
               El Sendero de la Pavilla transcurre por el borde de una acequia
@@ -71,7 +73,11 @@
               <a class="category-title" href="#">Falla de Nigüelas</a>
             </dt>
             <dd class="categories-img">
-              <img src="images/falla.jpeg" loading="lazy" alt="Falla">
+              <picture>
+                <source srcset="images/falla.webp" type="image/webp">
+                <source srcset="images/falla.jpeg" type="image/jpeg"> 
+                <img src="images/falla.jpeg" alt="Falla de Nigüelas">
+              </picture>
             </dd>
             <dd class="categories-description">
               La falla de Nigüelas es una gran fractura del terreno producida en
@@ -94,7 +100,11 @@
               <a class="category-title" href="#">La Almazara La Erilla</a>
             </dt>
             <dd class="categories-img">
-              <img src="images/almazara.jpeg" loading="lazy" alt="Almazara">
+              <picture>
+                <source srcset="images/almazara.webp" type="image/webp">
+                <source srcset="images/almazara.jpeg" type="image/jpeg"> 
+                <img src="images/almazara.jpeg" alt="Almazara La Erilla">
+              </picture>
             </dd>
             <dd class="categories-description">
               La Almazara La Erilla, es un edificio nazarí construido entre los
@@ -118,10 +128,11 @@
               <a class="category-title" href="#">Casa Zayas - Ayuntamiento</a>
             </dt>
             <dd class="categories-img">
-              <img
-                src="images/ayuntamiento-niguelas.jpeg"
-                loading="lazy"
-                alt="Casa Zayas">
+              <picture>
+                <source srcset="images/ayuntamiento-niguelas.webp" type="image/webp">
+                <source srcset="images/ayuntamiento-niguelas.jpeg" type="image/jpeg"> 
+                <img src="images/ayuntamiento-niguelas.jpeg" alt="Ayuntamiento de Nigüelas">
+              </picture>
             </dd>
             <dd class="categories-description">
               Es una casa señorial del siglo XVI, situada en la localidad.
@@ -141,17 +152,13 @@
     </main>
 
     <footer>
+      <img src="./images/new_logo.svg" alt="logo escudo">
       <ul>
-        <li>
-          Made with <span class="footer-heart">&#9829;</span> by Laura Corral
-          López
-        </li>
+        <li>Made with <span class="footer-heart">&#9829;</span> by Laura Corral López</li>
         <li>2023</li>
-        <li>
-          <a class="" href="https://github.com/" aria-label="Ir a Github"
-            >Github</a
-          >
-        </li>
+        <li><a href="./categories.html">Categorías</a></li>
+        <li><a href="./presentation.html">Presentación</a></li>
+        <li><a href="./links.html">Enlaces</a></li>
       </ul>
     </footer>
   </body>

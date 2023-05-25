@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PEC1 - Laura Corral López</title>
-    <link rel="icon" href="images/new_logo.svg" sizes="any">
+    <link rel="icon" href="images/new_logo.ico" sizes="any">
+    <link rel="icon" href="images/new_logo.svg" type="image/svg+xml"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -35,18 +36,16 @@
       </div>
     </header>
 
-    <main>
+    <main id="detail-page">
       <h1 class="title">El Sendero de la Pavilla</h1>
 
-      <img src="images/la-pavilla-1200.jpg" 
-      srcset="images/la-pavilla-480.jpg 480w,
-      images/la-pavilla-800.jpg 900w,
-      images/la-pavilla-1200.jpg 1200w"
-      sizes="(max-width: 400px) 400px,
-            (max-width: 800px) 800px,
-            1200px"
-      alt="Imagen de la Pavilla"
-      class="detail-principal-image">
+      <picture class="detail-principal-image">
+        <source media="(max-width: 480px)" srcset="images/la-pavilla-480.jpg">
+        <source media="(min-width: 481px) and (max-width:800px)" srcset="images/la-pavilla-800.jpg">
+        <source media="(min-width: 801px)" srcset="images/la-pavilla-1200.jpg">
+        <img alt="Imagen de la Pavilla"
+           src="images/la-pavilla-1200.jpg">
+      </picture>
 
       <article>
         <div class="detail-description">
@@ -92,6 +91,20 @@
           </div>
         </div>
 
+        <div class="extra-detail-pictures-container">
+          <picture class="extra-image-detail">
+            <source srcset="images/casa-cueva.webp" type="image/webp">
+            <source srcset="images/casa-cueva.jpg" type="image/jpeg"> 
+            <img src="images/casa-cueva.jpg" alt="Casa Cueva en la Pavilla">
+          </picture>
+  
+          <picture class="extra-image-detail">
+            <source srcset="images/catarata-pavilla.webp" type="image/webp">
+            <source srcset="images/catarata-pavilla.jpg" type="image/jpeg"> 
+            <img src="images/catarata-pavilla.jpg" alt="Catarata en la ruta de la Pavilla">
+          </picture>
+        </div>
+
         <div class="detail-extra-description">
           <div class="more-info-detaill-container">
             <ul class="more-info-list">
@@ -135,17 +148,13 @@
     </main>
 
     <footer>
+      <img src="./images/new_logo.svg" alt="logo escudo">
       <ul>
-        <li>
-          Made with <span class="footer-heart">&#9829;</span> by Laura Corral
-          López
-        </li>
+        <li>Made with <span class="footer-heart">&#9829;</span> by Laura Corral López</li>
         <li>2023</li>
-        <li>
-          <a class="" href="https://github.com/" aria-label="Ir a Github"
-            >Github</a
-          >
-        </li>
+        <li><a href="./categories.html">Categorías</a></li>
+        <li><a href="./presentation.html">Presentación</a></li>
+        <li><a href="./links.html">Enlaces</a></li>
       </ul>
     </footer>
   </body>
